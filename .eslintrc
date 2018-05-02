@@ -1,0 +1,105 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true,
+        "shared-node-browser": true
+    },
+    "globals": {
+        "$": true,
+        "MoGu": true,
+        "__DEV__": true,
+        "__TEST__": true,
+        "__PRO__": true,
+        "__OFFLINE__": true
+    },
+    "parser": "babel-eslint",
+    "extends": [
+        "eslint:recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "classes": true,
+            "jsx": true
+        },
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "plugins": [],
+    "rules": {
+        "no-console": 1,
+        "no-alert": 1,
+        "no-empty": [
+            2,
+            {"allowEmptyCatch": true}
+        ],
+        /* Best Practices */
+        "block-scoped-var": 2,
+        "curly": 2,
+        "eqeqeq": 2,
+        "default-case": 1,
+        "guard-for-in": 2,
+        "no-else-return": 2,
+        "no-eq-null": 2,
+        "no-extra-bind": 1,
+        "no-implicit-globals": 2,
+        "no-invalid-this": 2,
+        "no-lone-blocks": 1,
+        "no-with": 2,
+        "vars-on-top": 2,
+        /* Variables */
+        "no-unused-vars": 2,
+        /* Stylistic Issues */
+        "brace-style": [
+            1,
+            "1tbs",
+            {"allowSingleLine": true}
+        ],
+        "camelcase": 2,
+        "comma-spacing": 2,
+        "indent": [2,4,
+            {"SwitchCase": 1}
+        ],
+        "jsx-quotes": [
+            2,
+            "prefer-double"
+        ],
+        "linebreak-style": [
+            2,
+            "unix"
+        ],
+        "no-array-constructor": 2,
+        "no-lonely-if": 2,
+        "no-multiple-empty-lines": [
+            2,
+            {
+                "max": 1,
+                "maxBOF": 0
+            }
+        ],
+        "no-negated-condition": 2,
+        "no-new-object": 2,
+        "no-trailing-spaces": 2,
+        "object-curly-spacing": [
+            1,
+            "always"
+        ],
+        "semi": [
+            2,
+            "always",
+            {
+                "omitLastInOneLineBlock": true
+            }
+        ],
+        "semi-spacing": 2,
+        "space-before-function-paren": [
+            2,
+            {
+                "anonymous": "always",
+                "named": "never"
+            }
+        ]
+    }
+}
